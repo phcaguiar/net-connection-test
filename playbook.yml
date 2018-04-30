@@ -1,0 +1,6 @@
+---
+ - name: "Network Connectivity Test"
+   hosts: dev
+   gather_facts: no
+   roles:
+     - network-test

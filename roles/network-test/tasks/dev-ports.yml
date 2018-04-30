@@ -1,0 +1,7 @@
+--- 
+ - name: ""
+   wait_for:
+     host: "{{ item.host }}"
+     port: "{{ item.port }}"
+     timeout: 5
+   with_items: "{{ firewall_rules }}"
