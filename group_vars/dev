@@ -1,3 +1,5 @@
-Dev: True
-firewall_rules:
-  - { host:  localhost , port: 3389  , name: mylinux  }
+dev: True
+firewall_rulesdev:
+  - { destino: facebook.com, portas: 443, name: facebook https }
+  - { destino: facebook.com, portas: 80, name: facebook http }
+

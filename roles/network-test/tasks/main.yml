@@ -1,6 +1,0 @@
----
-# tasks file for .
-- name: Include Dev Firewall Test Ports Task
-  include_tasks: dev-ports.yml
-  when:
-    - Dev == True

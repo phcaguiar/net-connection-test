@@ -1,3 +1,4 @@
-Prd: True
-firewall_rules:
-  - { host:  localhost , port: 3389  , name: mylinux  }
+prd: True
+firewall_rulesprd:
+  - { destino: ingresso.com, portas: 443, name: ingresso https }
+  - { destino: ingresso.com, portas: 80, name: ingresso http }

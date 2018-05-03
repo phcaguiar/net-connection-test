@@ -1,0 +1,5 @@
+#dev: True
+#stg: True
+#firewall_rules:
+#  - { destino: facebook.com, portas: 443, name: facebook https }
+#  - { destino: facebook.com, portas: 80, name: facebook http }

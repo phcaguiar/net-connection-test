@@ -1,0 +1,10 @@
+---
+- name: Teste de conectividade com o facebook
+  wait_for:
+    host: "{{ item.destino }}"
+    port: "{{ item.portas }}"
+    state: started         # Port should be open
+    delay: 2               # No wait before first check (sec)
+    timeout: 3             # Stop checking after timeout (sec)
+  ignore_errors: yes
+  with_items: "{{ firewall_rulesprd }}"

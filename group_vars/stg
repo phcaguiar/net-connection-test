@@ -1,3 +1,4 @@
-Stg: True
-firewall_rules:
-  - { host:  localhost , port: 3389  , name: mylinux  }
+stg: True
+firewall_rulesstg:
+  - { destino: google.com, portas: 443, name: google https }
+  - { destino: google.com, portas: 80, name: google http }

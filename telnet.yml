@@ -1,0 +1,8 @@
+---
+- name: Teste de conexao por ambientes
+  hosts: all
+  remote_user: root
+#  become: true
+  gather_facts: no
+  roles:
+    - telnet
