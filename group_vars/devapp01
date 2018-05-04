@@ -1,6 +1,6 @@
 dev: True
-dev01: True
-dev01_firewall_rules:
+devapp01: True
+devapp01_firewall_rules:
   - { destino: facebook.com, portas: 443, name: facebook https }
   - { destino: facebook.com, portas: 80, name: facebook http }
 
