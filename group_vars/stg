@@ -1,4 +1,4 @@
-stg: True
-firewall_rulesstg:
+stg:
+stg_firewall_rules:
   - { destino: google.com, portas: 443, name: google https }
   - { destino: google.com, portas: 80, name: google http }

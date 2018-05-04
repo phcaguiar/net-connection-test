@@ -1,0 +1,6 @@
+dev: True
+dev02: True
+dev02_firewall_rules:
+  - { destino: instagram.com, portas: 443, name: insta https }
+  - { destino: instagram.com, portas: 80, name: insta http }
+

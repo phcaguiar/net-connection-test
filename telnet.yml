@@ -1,6 +1,6 @@
 ---
 - name: Teste de conexao por ambientes
-  hosts: all
+  hosts: dev
   remote_user: root
 #  become: true
   gather_facts: no

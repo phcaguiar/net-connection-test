@@ -1,0 +1,16 @@
+---
+# tasks file for .
+- name: Teste de conexao na porta 22 em Dev
+  include_tasks: devrules.yml
+  when:
+    - TELNETDEV == True
+
+- name: Teste de conexao na porta 22 em STG
+  include_tasks: stgrules.yml
+  when:
+    - TELNETSTG == True
+
+- name: Teste de conexao na porta 22 em PRD
+  include_tasks: prdrules.yml
+  when:
+    - TELNETPRD == True

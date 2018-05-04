@@ -1,5 +1,5 @@
 ---
-- name: Teste de conectividade com o facebook
+- name: Teste de conectividade em APP01 DEV
   wait_for:
     host: "{{ item.destino }}"
     port: "{{ item.portas }}"
@@ -7,4 +7,16 @@
     delay: 2               # No wait before first check (sec)
     timeout: 3             # Stop checking after timeout (sec)
   ignore_errors: yes
-  with_items: "{{ firewall_rulesdev }}"
+  with_items: "{{ dev01_firewall_rules }}"
+  when: dev01 == True
+
+- name: Teste de conectividade APP02 DEV
+  wait_for:
+    host: "{{ item.destino }}"
+    port: "{{ item.portas }}"
+    state: started         # Port should be open
+    delay: 2               # No wait before first check (sec)
+    timeout: 3             # Stop checking after timeout (sec)
+  ignore_errors: yes
+  with_items: "{{ dev02_firewall_rules }}"
+  when: dev02 == True

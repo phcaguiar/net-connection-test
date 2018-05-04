@@ -1,15 +1,12 @@
 ---
 - name: Include DEV Firewall Test Ports Task
   include_tasks: dev-ports.yml
-  when:
-    - dev == True
+  when: dev == True
 
 - name: Include STG Firewall Test Ports Task
   include_tasks: stg-ports.yml
-  when: 
-    - stg == True
+  when: stg == True
 
 - name: Include PRD Firewall Test Ports Task
   include_tasks: prd-ports.yml
-  when:
-    - prd == True
+  when: prd == True

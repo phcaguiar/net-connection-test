@@ -1,4 +1,4 @@
-prd: True
-firewall_rulesprd:
+prd:
+prd_firewall_rules:
   - { destino: ingresso.com, portas: 443, name: ingresso https }
   - { destino: ingresso.com, portas: 80, name: ingresso http }

@@ -7,4 +7,4 @@
     delay: 2               # No wait before first check (sec)
     timeout: 3             # Stop checking after timeout (sec)
   ignore_errors: yes
-  with_items: "{{ firewall_rulesstg }}"
+  with_items: "{{ stg_firewall_rules }}"
